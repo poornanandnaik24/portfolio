@@ -1,0 +1,92 @@
+﻿=== PAGE 1 ===
+Poornanand
+Researcher in Machine Learning || Patent Holder || GATE Qualified (2x)
+(cid:131) +91-9945218238 # poornanandnaik24@gmail.com
+(cid:239) https://www.linkedin.com/in/poornanandnaik24
+Profile Summary
+PhD Research Scholar in Computer Science with a MasterÆs from R.V. College of Engineering, Bengaluru, and 5 years of research
+and development experience in Machine Learning and Artificial Intelligence. Specialized in developing, training, and fine-tuning AI
+models with a strong focus on Computer Vision and Medical Imaging. Experienced in designing algorithms, conducting experiments,
+and publishing results that advance scientific understanding and enable real-world applications.
+Education
+National Institute of Technology Karnataka Surathkal India August 2020 û Pursuing
+Doctor of Philosophy (Ph.D.) in Computer Science and Engineering
+R.V. College of Engineering, Bengaluru, India August 2016 û June 2018
+Master of Technology in Computer Science and Engineering
+Srinivas Institute of Technology, Mangalore, India August 2009 û June 2013
+Bachelor of Engineering in Computer Science and Engineering
+Experience
+National Institute of Technology Karnataka Surathkal India August 2020 û Present
+Ph.D. Research Scholar Surathkal, Karnataka
+ò Rib Segmentation in Medical Imaging: Implemented deep learningûbased rib segmentation to improve diagnostic accuracy
+inthoracicimaging. Enhanceddetectionoffractures, pathologies, andlesions, whilesupportingsurgicalplanningandquantitative
+analysis of anatomical changes.
+ò Tuberculosis Detection by Suppressed Ribs in Chest X-Rays: Developed an algorithm combining rib suppression and
+anomaly localization to improve visualization of apical lung regions. Reduced bony structure occlusion (ribs, clavicles), enabling
+more robust detection of TB-related abnormalities.
+ò Head and Neck Tumour Segmentation: Designedandvalidatedanadvancedsegmentationpipeline(CNN/transformer-based)
+for precise delineation of GTV-1 in head and neck tumours. Enabled early tumour detection, longitudinal growth monitoring, and
+accurate assessment of radiotherapy response.
+Parul Institute of Engineering and Technology Aug 2018 û Oct 2019
+Assistant Professor Vadodara, Gujarat
+ò Taught Core CS Subjects such as Data Structures and Algorithms, DBMS.
+ò Served as a research and project coordinator for AI/ML Projects.
+ò Collaborated with faculty and students to facilitate academic research at the university level.
+ò Managed interdisciplinary projects, ensuring seamless integration of technical expertise and strategic planning.
+Projects
+Personal Projects:
+ò Modified the optical properties of LCDs and integrated advanced 3D filtering techniques to develop anti-spy
+display systems for secure banking applications.
+ò Engineered modifications in liquid crystal display (LCD) optical properties to restrict viewing angles and prevent shoulder-
+surfing attacks.
+ò Designed and implemented advanced 3D optical filter architectures to integrate anti-spy functionality at the hardware level,
+ensuring content visibility exclusively to users within authorized angles of incidence.
+ò Addressed vulnerabilities in conventional end-to-end encryption by mitigating endpoint data exposure risks through secure
+display technology.
+ò Achieved enhanced data confidentiality at the humanûmachine interface, ensuring that sensitive banking information re-
+mained protected during both data processing and visual rendering stages.
+ò Water leak detection in smart water management supplyû Tirupati Muncipal Corporation
+ò Collaborated with Tirupati Municipal Corporation to develop a smart water leak detection system using machine learning
+algorithmsandmathematicalmodeling. DeployedaninteractiveRShinyapplicationonAWSCloudforreal-timemonitoring
+and predictive analytics.
+ò Classification of Remote Sensing Images using Active Learning Algorithms
+ò Implemented image classification and feature identification on satellite imagery using active learning and supervised algo-
+rithms. Conducted comparative analysis to demonstrate the superior performance of active learning in reducing labeling
+effort while maintaining or improving classification accuracy.
+Technical Skills
+Languages: Python, C, C++.
+Tools : Pytorch, Keras/Tensorflow, Numpy, Pandas, Scikit.
+Platforms : Linux, AWS EC2.
+Databases : MySQL
+Patents
+ò IN 423922 - Method, System and Apparatus for Preventing Shoulder Surfing in Secure Electronic Transactions.
+[Granted Mar 3, 2023]
+Achievements
+ò Recognized as Best Faculty in Computer Science and Engineering Department for æProf. R.H. Pandya Academic Performance
+Awards 2019Æ.
+ò Qualified GATE 2016 with AIR 3499 [96.77 percentile] and GATE 2020 with AIR 12686 [87.19 percentile].
+
+=== PAGE 2 ===
+Publications
+ò An Automated Deep Learning Pipeline for Detecting User Errors in Spirometry Test - Biomedical Signal Processing
+and Control, 2024 [Published]
+ò Assessment of Asthma BAL Cytokines using Machine Learning Techniques,2ndInternationalConferenceonParadigm
+Shifts in Communications Embedded Systems, Machine Learning and Signal Processing (PCEMS), Nagpur, India, 2023, pp. 1-5.
+ò Attention Based CRNN Models for Identification of Respiratory Diseases from Lung Sounds, 14th International
+Conference on Communications, Computing, Networking, and Technologies (ICCCNT), IIT Delhi, 2023.
+ò Preserving data privacy against shoulder surfing through LCD Polarization and morphological operations, 3rd
+IEEE International conference on Recent Trends in Electronics, Information and Communication Technology (RTEICT-2018).
+ò Automated Rib Segmentation in Chest X-rays Using ThoraxSegNet: Enhancing Pul- monary Disease Detection
+and Analysis, Engineering Research Express [Communicated]
+ò A Dual Competitive Mean Teacher Semi-Supervised Learning Framework for Enhanced Rib Segmentation Per-
+formance, Sadhana [Communicated]
+Certifications
+ò Coursera: Deep Learning Specialization (Offered by DeepLearning.AI)
+Link:https://www.coursera.org/account/accomplishments/specialization/8SLVLAJKUSWY
+ò Coursera: Machine Learning Specialization (Offered by DeepLearning.AI, Stanford University)
+Link:https://www.coursera.org/account/accomplishments/specialization/QSUSWGQ6X46H
+ò Coursera: Deep Neural Networks with PyTorch (Offered by IBM)
+Link:https://www.coursera.org/account/accomplishments/certificate/7PGVBHVY45X5
+ò Nvidia: Fundamentals of Deep Learning
+Link:https://courses.nvidia.com/certificates/bbf565e3578b4322be10a294812e060d/
+

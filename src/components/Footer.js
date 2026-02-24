@@ -26,15 +26,14 @@ const Footer = () => {
                         <span className="footer-name">Poornanand<span style={{ color: 'var(--accent-cyan)' }}>.</span></span>
                     </div>
                     <p className="footer-tagline">
-                        Advancing healthcare through AI-powered medical imaging research.
+                        PhD Scholar @ NIT Karnataka — Advancing healthcare through AI-powered medical imaging research.
                     </p>
                     <div className="footer-socials">
                         {[
-                            { label: 'GitHub', href: 'https://github.com/' },
-                            { label: 'LinkedIn', href: 'https://linkedin.com/' },
+                            { label: 'GitHub', href: 'https://github.com/poornanandnaik24' },
+                            { label: 'LinkedIn', href: 'https://www.linkedin.com/in/poornanandnaik24' },
                             { label: 'Scholar', href: 'https://scholar.google.com/' },
-                            { label: 'ResearchGate', href: 'https://researchgate.net/' },
-                            { label: 'arXiv', href: 'https://arxiv.org/' },
+                            { label: 'Email', href: 'mailto:poornanandnaik24@gmail.com' },
                         ].map(s => (
                             <a key={s.label} href={s.href} className="footer-social" target="_blank" rel="noreferrer">{s.label}</a>
                         ))}
@@ -62,7 +61,7 @@ const Footer = () => {
                 <div className="footer-nav-group">
                     <h4>Research Focus</h4>
                     <ul>
-                        {['Medical Image Segmentation', 'Tumor Detection AI', 'Generative Models', 'Federated Learning', 'Computer Vision', 'Clinical AI Validation'].map(item => (
+                        {['Rib Segmentation', 'Tumour Detection AI', 'TB Imaging', 'Semi-Supervised Learning', 'Computer Vision', 'Lung Sound Analysis'].map(item => (
                             <li key={item}><span className="footer-interest">{item}</span></li>
                         ))}
                     </ul>

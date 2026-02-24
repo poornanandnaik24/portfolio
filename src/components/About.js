@@ -5,40 +5,38 @@ import './About.css';
 
 const timelineData = [
   {
-    year: '2024 - Present',
-    title: 'Research Scholar - Medical Imaging AI',
-    org: 'National Institute / University',
-    desc: 'Leading deep learning research on automated detection of neurological disorders from MRI and CT scans using transformer-based architectures.',
-    icon: 'microscope',
+    year: 'Aug 2020 - Present',
+    title: 'PhD Research Scholar',
+    org: 'NIT Karnataka Surathkal, India',
+    desc: 'Conducting PhD research in Computer Science & Engineering. Focus areas: rib segmentation in chest X-rays, TB detection via rib suppression, and head & neck tumour segmentation using CNN/transformer-based pipelines.',
+    icon: '',
     color: '#00e5ff',
   },
   {
-    year: '2022 - 2024',
-    title: 'M.Tech - Biomedical Engineering',
-    org: 'Premier Medical Technology University',
-    desc: 'Specialized in computational imaging and AI-assisted diagnostics. Thesis on Attention-Guided U-Net for Tumor Segmentation in Brain MRI.',
-    icon: 'graduate',
+    year: 'Aug 2018 - Oct 2019',
+    title: 'Assistant Professor',
+    org: 'Parul Institute of Engineering and Technology, Vadodara',
+    desc: 'Taught core CS subjects including Data Structures, Algorithms, and DBMS. Served as research & project coordinator for AI/ML projects. Recognized as Best Faculty in CS & Engineering (Prof. R.H. Pandya Award 2019).',
+    icon: '',
     color: '#a855f7',
   },
   {
-    year: '2021 - 2022',
-    title: 'Research Intern - Deep Learning',
-    org: 'AI Healthcare Startup',
-    desc: 'Built CNN pipelines for diabetic retinopathy grading achieving 94.2% accuracy on fundus image datasets. Deployed models on cloud infrastructure.',
-    icon: 'laptop',
+    year: 'Aug 2016 - Jun 2018',
+    title: 'M.Tech  Computer Science & Engineering',
+    org: 'R.V. College of Engineering, Bengaluru',
+    desc: 'Master of Technology in Computer Science and Engineering. Specialized in machine learning and AI systems with a strong focus on applied research and algorithm design.',
+    icon: '',
     color: '#ec4899',
   },
   {
-    year: '2018 - 2022',
-    title: 'B.Tech - Electronics and Communication',
-    org: 'Engineering College',
-    desc: 'Graduated with distinction. Final year project: Deep Learning-Based Pneumonia Detection from Chest X-rays - awarded Best Project.',
-    icon: 'bolt',
+    year: 'Aug 2009 - Jun 2013',
+    title: 'B.E.  Computer Science & Engineering',
+    org: 'Srinivas Institute of Technology, Mangalore',
+    desc: 'Bachelor of Engineering in Computer Science and Engineering. Built foundational knowledge in programming, computer architecture, and software development.',
+    icon: '',
     color: '#10b981',
   },
 ];
-
-const ICON_MAP = { microscope: '', graduate: '', laptop: '', bolt: '' };
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -54,12 +52,7 @@ const About = () => {
   return (
     <section id="about" className="section about-section">
       <div className="container" ref={ref}>
-        <motion.div
-          className="section-header"
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
+        <motion.div className="section-header" initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
           <span className="section-badge">
             <span className="badge-icon"></span> About Me
           </span>
@@ -70,12 +63,7 @@ const About = () => {
         </motion.div>
 
         <div className="about-grid">
-          <motion.div
-            className="about-bio"
-            initial={{ opacity: 0, x: -40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
+          <motion.div className="about-bio" initial={{ opacity: 0, x: -40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }}>
             <div className="glass-card bio-card">
               <div className="bio-avatar">
                 <div className="avatar-ring" />
@@ -95,62 +83,44 @@ const About = () => {
               </div>
 
               <h3 className="bio-name">Poornanand</h3>
-              <p className="bio-role gradient-text">Medical Imaging Researcher &amp; Deep Learning Engineer</p>
-              <div className="bio-location"><span></span> India</div>
+              <p className="bio-role gradient-text">PhD Scholar  Machine Learning &amp; Medical Imaging</p>
+              <div className="bio-location"><span></span> NIT Karnataka, Surathkal, India</div>
 
               <p className="bio-text">
-                I am a passionate researcher working at the exciting crossroads of{' '}
-                <strong>Medical Imaging</strong> and <strong>Deep Learning</strong>. My work focuses
-                on developing novel neural network architectures that can analyze medical scans -
-                from MRI and CT to X-ray and fundus images - with superhuman precision.
+                PhD Research Scholar at <strong>NIT Karnataka Surathkal</strong> with a M.Tech from
+                R.V. College of Engineering, Bengaluru. Over <strong>5 years of R&amp;D experience</strong> in
+                Machine Learning and AI, specializing in <strong>Computer Vision</strong> and{' '}
+                <strong>Medical Imaging</strong>.
               </p>
               <p className="bio-text">
-                I believe AI has the power to democratize healthcare diagnostics, making expert-level
-                analysis accessible anywhere in the world. Every model I build is a step toward that future.
+                Holder of <strong>Indian Patent IN 423922</strong> for anti-shoulder-surfing technology.
+                GATE qualified twice  AIR 3499 [96.77 percentile, 2016] and AIR 12686 [87.19 percentile, 2020].
               </p>
 
               <div className="bio-interests">
-                {['Computer Vision', 'Medical AI', 'Image Segmentation', 'Generative Models', 'Transfer Learning', 'Clinical Validation'].map(tag => (
+                {['Medical Imaging', 'Rib Segmentation', 'Deep Learning', 'Computer Vision', 'NLP', 'Active Learning'].map(tag => (
                   <span key={tag} className="interest-tag">{tag}</span>
                 ))}
               </div>
 
               <div className="bio-links">
-                <a href="mailto:poornanand@example.com" className="bio-link">
-                  <span></span> poornanand@example.com
+                <a href="mailto:poornanandnaik24@gmail.com" className="bio-link">
+                  <span></span> poornanandnaik24@gmail.com
                 </a>
-                <a
-                  href={process.env.PUBLIC_URL + '/Resume.pdf'}
-                  className="bio-link bio-link-resume"
-                  target="_blank"
-                  rel="noreferrer"
-                  download="Poornanand_Resume.pdf"
-                >
+                <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="bio-link bio-link-resume" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
                   <span></span> Download Resume
                 </a>
               </div>
             </div>
           </motion.div>
 
-          <motion.div
-            className="about-timeline"
-            initial={{ opacity: 0, x: 40 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
+          <motion.div className="about-timeline" initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.7, delay: 0.3 }}>
             <h3 className="timeline-heading">My Journey</h3>
             <div className="timeline">
               {timelineData.map((item, i) => (
-                <motion.div
-                  key={item.title}
-                  className="timeline-item"
-                  custom={i}
-                  variants={fadeUp}
-                  initial="hidden"
-                  animate={inView ? 'visible' : 'hidden'}
-                >
+                <motion.div key={item.title} className="timeline-item" custom={i} variants={fadeUp} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
                   <div className="timeline-dot" style={{ background: item.color, boxShadow: `0 0 12px ${item.color}60` }}>
-                    <span>{ICON_MAP[item.icon]}</span>
+                    <span>{item.icon}</span>
                   </div>
                   <div className="timeline-content glass-card">
                     <span className="timeline-year" style={{ color: item.color }}>{item.year}</span>

@@ -4,10 +4,10 @@ import { useInView } from 'react-intersection-observer';
 import './Contact.css';
 
 const contactInfo = [
-    { icon: '✉', label: 'Email', value: 'poornanand@example.com', href: 'mailto:poornanand@example.com', color: '#00e5ff' },
-    { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/poornanand', href: 'https://linkedin.com/', color: '#a855f7' },
-    { icon: '🐙', label: 'GitHub', value: 'github.com/poornanand', href: 'https://github.com/', color: '#ec4899' },
-    { icon: '📚', label: 'Google Scholar', value: 'scholar.google.com', href: 'https://scholar.google.com/', color: '#10b981' },
+    { icon: '✉', label: 'Email', value: 'poornanandnaik24@gmail.com', href: 'mailto:poornanandnaik24@gmail.com', color: '#00e5ff' },
+    { icon: '🔗', label: 'LinkedIn', value: 'linkedin.com/in/poornanandnaik24', href: 'https://www.linkedin.com/in/poornanandnaik24', color: '#a855f7' },
+    { icon: '🐙', label: 'GitHub', value: 'github.com/poornanandnaik24', href: 'https://github.com/poornanandnaik24', color: '#ec4899' },
+    { icon: '📞', label: 'Phone', value: '+91-9945218238', href: 'tel:+919945218238', color: '#10b981' },
 ];
 
 const Contact = () => {
@@ -58,10 +58,10 @@ const Contact = () => {
                                 <span className="status-pulse" />
                                 <span>Available for collaborations</span>
                             </div>
-                            <h3>Have a project or idea?</h3>
+                            <h3>Open to Collaborations!</h3>
                             <p>
-                                Whether you're working on clinical AI, need help with a medical imaging pipeline,
-                                or want to explore joint research — I'm always excited to connect with like-minded researchers and teams.
+                                PhD Scholar at <strong>NIT Karnataka Surathkal</strong> working on Medical Imaging & Deep Learning.
+                                Open to research collaborations, joint publications, speaking engagements, and academic partnerships.
                             </p>
                             <p>
                                 I typically respond within <strong>24 hours</strong>.

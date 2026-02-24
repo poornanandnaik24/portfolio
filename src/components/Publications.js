@@ -4,191 +4,169 @@ import { useInView } from 'react-intersection-observer';
 import './Publications.css';
 
 const publications = [
-    {
-        title: 'Dual-Attention Hybrid Transformer for Multi-Class Brain Tumor Segmentation in Multi-Modal MRI',
-        journal: 'IEEE Transactions on Medical Imaging',
-        year: '2024',
-        impact: 'IF: 10.048',
-        authors: 'Poornanand, A. Sharma, R. Kumar, et al.',
-        abstract: 'We propose a novel Dual-Attention Hybrid Transformer (DAHT) that integrates local CNN features with global self-attention for robust multi-class brain tumor segmentation across T1, T2, and FLAIR MRI modalities...',
-        tags: ['Brain MRI', 'Segmentation', 'Transformer', 'Multi-Modal'],
-        doi: 'https://doi.org/',
-        arxiv: 'https://arxiv.org/',
-        citations: 42,
-        color: '#00e5ff',
-        type: 'Journal',
-    },
-    {
-        title: 'Privacy-Preserving Federated Learning for Multi-Institutional Diabetic Retinopathy Screening',
-        journal: 'Nature Digital Medicine',
-        year: '2024',
-        impact: 'IF: 15.357',
-        authors: 'Poornanand, S. Patel, M. Singh, et al.',
-        abstract: 'A novel federated learning framework with differential privacy guarantees for collaborative DR screening model training across geographically distributed hospitals without sharing patient data...',
-        tags: ['Federated Learning', 'Retinopathy', 'Privacy', 'Healthcare AI'],
-        doi: 'https://doi.org/',
-        arxiv: 'https://arxiv.org/',
-        citations: 28,
-        color: '#a855f7',
-        type: 'Journal',
-    },
-    {
-        title: 'MedDiff: Conditioned Latent Diffusion Models for Realistic Medical Image Synthesis',
-        journal: 'MICCAI 2024 – Medical Image Computing and Computer-Assisted Intervention',
-        year: '2024',
-        impact: 'Top Conference (A*)',
-        authors: 'Poornanand, L. Zhang, T. Williams, et al.',
-        abstract: 'MedDiff presents a text-conditioned latent diffusion framework achieving state-of-the-art FID scores on MRI and CT synthesis, enabling privacy-preserving data augmentation for rare disease ML pipelines...',
-        tags: ['Diffusion Models', 'Image Synthesis', 'Data Augmentation', 'LDM'],
-        doi: 'https://doi.org/',
-        arxiv: 'https://arxiv.org/',
-        citations: 19,
-        color: '#ec4899',
-        type: 'Conference',
-    },
-    {
-        title: 'Attention-Guided U-Net with Multi-Scale Feature Fusion for Accurate Lung Nodule Segmentation in CT',
-        journal: 'Medical Image Analysis (Elsevier)',
-        year: '2023',
-        impact: 'IF: 13.828',
-        authors: 'Poornanand, A. Mehta, V. Rao, et al.',
-        abstract: 'An attention-guided U-Net framework with multi-scale encoder feature fusion for robust lung nodule segmentation in LIDC-IDRI CT dataset, achieving superior performance over existing methods on nodules < 3mm...',
-        tags: ['CT Scan', 'Lung Nodule', 'U-Net', 'Attention Mechanism'],
-        doi: 'https://doi.org/',
-        arxiv: 'https://arxiv.org/',
-        citations: 57,
-        color: '#10b981',
-        type: 'Journal',
-    },
-    {
-        title: 'EnsemblePath: Weakly-Supervised Ensemble Learning for Whole Slide Image Classification',
-        journal: 'CVPR 2023 – Workshop on Computer Vision for Microscopy Image Analysis',
-        year: '2023',
-        impact: 'Top Conference (A*)',
-        authors: 'Poornanand, N. Gupta, P. Chen, et al.',
-        abstract: 'A weakly-supervised MIL ensemble approach using attention pooling across ResNet, ViT, and DenseNet backbones for cancer subtype classification from histopathology WSIs with slide-level labels only...',
-        tags: ['Histopathology', 'WSI', 'Weakly Supervised', 'Ensemble MIL'],
-        doi: 'https://doi.org/',
-        arxiv: 'https://arxiv.org/',
-        citations: 31,
-        color: '#6366f1',
-        type: 'Conference',
-    },
+  {
+    type: 'JOURNAL',
+    year: '2024',
+    title: 'An Automated Deep Learning Pipeline for Detecting User Errors in Spirometry Test',
+    journal: 'Biomedical Signal Processing and Control',
+    authors: 'Poornanand, et al.',
+    abstract: 'Automated deep learning pipeline for quality assessment and error detection in spirometry tests, enabling reliable pulmonary function test evaluation without the need for expert review at every stage.',
+    tags: ['Deep Learning', 'Spirometry', 'Signal Processing', 'Lung Function'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Published',
+    color: '#00e5ff',
+    if: null,
+  },
+  {
+    type: 'COMMUNICATED',
+    year: '2024',
+    title: 'Automated Rib Segmentation in Chest X-rays Using ThoraxSegNet: Enhancing Pulmonary Disease Detection and Analysis',
+    journal: 'Engineering Research Express',
+    authors: 'Poornanand, et al.',
+    abstract: 'ThoraxSegNet  a novel deep learning architecture for automated rib segmentation in chest radiographs. Demonstrated improvements in fracture detection, lesion identification, and quantitative anatomical analysis.',
+    tags: ['ThoraxSegNet', 'Rib Segmentation', 'Chest X-Ray', 'Pulmonary AI'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Communicated',
+    color: '#a855f7',
+    if: null,
+  },
+  {
+    type: 'COMMUNICATED',
+    year: '2024',
+    title: 'A Dual Competitive Mean Teacher Semi-Supervised Learning Framework for Enhanced Rib Segmentation Performance',
+    journal: 'Sadhana  Academy Proceedings in Engineering Sciences',
+    authors: 'Poornanand, et al.',
+    abstract: 'A dual competitive mean teacher framework for semi-supervised rib segmentation that leverages unlabeled data to improve performance in data-scarce medical imaging scenarios.',
+    tags: ['Semi-Supervised', 'Mean Teacher', 'Rib Segmentation', 'SSL'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Communicated',
+    color: '#ec4899',
+    if: null,
+  },
+  {
+    type: 'CONFERENCE',
+    year: '2023',
+    title: 'Attention Based CRNN Models for Identification of Respiratory Diseases from Lung Sounds',
+    journal: '14th ICCCNT  IIT Delhi, 2023',
+    authors: 'Poornanand, et al.',
+    abstract: 'Attention-based CRNN models for classifying respiratory diseases directly from lung auscultation sounds. Presented at the 14th International Conference on Communications, Computing, Networking and Technologies at IIT Delhi.',
+    tags: ['CRNN', 'Attention', 'Lung Sounds', 'Respiratory Disease'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Published',
+    color: '#10b981',
+    if: null,
+  },
+  {
+    type: 'CONFERENCE',
+    year: '2023',
+    title: 'Assessment of Asthma BAL Cytokines using Machine Learning Techniques',
+    journal: '2nd PCEMS  Nagpur, India, 2023',
+    authors: 'Poornanand, et al.',
+    abstract: 'Machine learning-based assessment of asthma bronchoalveolar lavage (BAL) cytokines. Presented at the 2nd International Conference on Paradigm Shifts in Communications Embedded Systems, Machine Learning and Signal Processing.',
+    tags: ['Machine Learning', 'Asthma', 'BAL Cytokines', 'Medical AI'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Published',
+    color: '#f59e0b',
+    if: null,
+  },
+  {
+    type: 'CONFERENCE',
+    year: '2018',
+    title: 'Preserving Data Privacy Against Shoulder Surfing through LCD Polarization and Morphological Operations',
+    journal: '3rd IEEE RTEICT-2018',
+    authors: 'Poornanand, et al.',
+    abstract: 'Novel approach to data privacy using LCD polarization combined with morphological operations to prevent shoulder surfing attacks. Led to the granted Indian Patent IN 423922 for the underlying technology.',
+    tags: ['LCD Polarization', 'Data Privacy', 'Morphological Ops', 'Security'],
+    doi: '#',
+    arxiv: null,
+    citations: null,
+    status: 'Published',
+    color: '#8b5cf6',
+    if: null,
+  },
 ];
 
-const PublicationCard = ({ pub, index, inView }) => (
-    <motion.div
-        className="pub-card glass-card"
-        initial={{ opacity: 0, x: -30 }}
-        animate={inView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.5, delay: index * 0.1 }}
-        style={{ '--pub-color': pub.color }}
-    >
-        <div className="pub-accent" style={{ background: pub.color }} />
-
-        <div className="pub-header">
-            <div className="pub-meta">
-                <span className="pub-type" style={{ color: pub.color, background: `${pub.color}12`, border: `1px solid ${pub.color}30` }}>
-                    {pub.type}
-                </span>
-                <span className="pub-year">{pub.year}</span>
-                <span className="pub-impact">{pub.impact}</span>
-            </div>
-            <div className="pub-citations">
-                <span className="cite-icon">📄</span>
-                <span>{pub.citations} citations</span>
-            </div>
-        </div>
-
-        <h3 className="pub-title">{pub.title}</h3>
-        <p className="pub-journal">{pub.journal}</p>
-        <p className="pub-authors">{pub.authors}</p>
-        <p className="pub-abstract">{pub.abstract}</p>
-
-        <div className="pub-tags">
-            {pub.tags.map(tag => (
-                <span key={tag} className="pub-tag" style={{ borderColor: `${pub.color}25`, color: `${pub.color}cc` }}>
-                    {tag}
-                </span>
-            ))}
-        </div>
-
-        <div className="pub-actions">
-            <a href={pub.doi} className="pub-btn" target="_blank" rel="noreferrer">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" /></svg>
-                DOI Link
-            </a>
-            <a href={pub.arxiv} className="pub-btn" target="_blank" rel="noreferrer">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /><polyline points="14 2 14 8 20 8" /></svg>
-                arXiv Preprint
-            </a>
-        </div>
-    </motion.div>
-);
+const stats = [
+  { icon: '', value: '6+', label: 'Publications' },
+  { icon: '', value: '2', label: 'Journals' },
+  { icon: '', value: '4', label: 'Conferences' },
+  { icon: '', value: '1', label: 'Granted Patent' },
+];
 
 const Publications = () => {
-    const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.05 });
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.05 });
 
-    return (
-        <section id="publications" className="section publications-section">
-            <div className="container" ref={ref}>
-                <motion.div
-                    className="section-header"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6 }}
-                >
-                    <span className="section-badge"><span>📚</span> Publications</span>
-                    <h2 className="section-title">
-                        Peer-Reviewed <span className="gradient-text">Research Work</span>
-                    </h2>
-                    <p className="section-subtitle">
-                        Published in top-tier journals and conferences including IEEE TMI, Nature Digital Medicine, and MICCAI.
-                    </p>
-                </motion.div>
+  return (
+    <section id="publications" className="section publications-section">
+      <div className="container" ref={ref}>
+        <motion.div className="section-header" initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
+          <span className="section-badge"><span></span> Publications</span>
+          <h2 className="section-title">Peer-Reviewed <span className="gradient-text">Research Work</span></h2>
+          <p className="section-subtitle">Published in journals and conferences including Biomedical Signal Processing & Control, IIT Delhi ICCCNT, and IEEE RTEICT.</p>
+        </motion.div>
 
-                {/* Stats Row */}
-                <motion.div
-                    className="pub-stats"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                >
-                    {[
-                        { value: '10+', label: 'Publications', icon: '📄' },
-                        { value: '177+', label: 'Total Citations', icon: '📖' },
-                        { value: '8.5', label: 'h-Index', icon: '📊' },
-                        { value: '3', label: 'Top-Tier Journals', icon: '🏆' },
-                    ].map(stat => (
-                        <div key={stat.label} className="pub-stat-card glass-card">
-                            <span className="pub-stat-icon">{stat.icon}</span>
-                            <span className="pub-stat-value gradient-text">{stat.value}</span>
-                            <span className="pub-stat-label">{stat.label}</span>
-                        </div>
-                    ))}
-                </motion.div>
+        <motion.div className="pub-stats" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 }}>
+          {stats.map((s, i) => (
+            <motion.div key={s.label} className="pub-stat glass-card" initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2 + i * 0.1 }}>
+              <span className="pub-stat-icon">{s.icon}</span>
+              <span className="pub-stat-value gradient-text">{s.value}</span>
+              <span className="pub-stat-label">{s.label}</span>
+            </motion.div>
+          ))}
+        </motion.div>
 
-                {/* Publications List */}
-                <div className="publications-list">
-                    {publications.map((pub, i) => (
-                        <PublicationCard key={pub.title} pub={pub} index={i} inView={inView} />
-                    ))}
+        <div className="publications-list">
+          {publications.map((pub, i) => (
+            <motion.div key={pub.title} className="pub-card glass-card"
+              style={{ borderLeftColor: pub.color }}
+              initial={{ opacity: 0, x: -30 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.5, delay: i * 0.1 }}>
+              <div className="pub-header">
+                <div className="pub-meta">
+                  <span className="pub-type" style={{ background: `${pub.color}20`, color: pub.color }}>{pub.type}</span>
+                  <span className="pub-year">{pub.year}</span>
+                  <span className="pub-status" style={{ color: pub.status === 'Published' ? '#10b981' : '#f59e0b' }}>
+                    {pub.status === 'Published' ? ' Published' : ' ' + pub.status}
+                  </span>
                 </div>
+              </div>
+              <h3 className="pub-title">{pub.title}</h3>
+              <p className="pub-journal" style={{ color: pub.color }}>{pub.journal}</p>
+              <p className="pub-authors">{pub.authors}</p>
+              <p className="pub-abstract">{pub.abstract}</p>
+              <div className="pub-tags">
+                {pub.tags.map(tag => <span key={tag} className="pub-tag">{tag}</span>)}
+              </div>
+              {pub.doi && pub.doi !== '#' && (
+                <div className="pub-actions">
+                  <a href={pub.doi} target="_blank" rel="noreferrer" className="pub-btn"> DOI Link</a>
+                  {pub.arxiv && <a href={pub.arxiv} target="_blank" rel="noreferrer" className="pub-btn"> arXiv</a>}
+                </div>
+              )}
+            </motion.div>
+          ))}
+        </div>
 
-                {/* Google Scholar Link */}
-                <motion.div
-                    className="scholar-cta"
-                    initial={{ opacity: 0 }}
-                    animate={inView ? { opacity: 1 } : {}}
-                    transition={{ delay: 0.8 }}
-                >
-                    <a href="https://scholar.google.com" className="btn-outline" target="_blank" rel="noreferrer">
-                        View All on Google Scholar ↗
-                    </a>
-                </motion.div>
-            </div>
-        </section>
-    );
+        <motion.div className="pub-cta" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.8 }}>
+          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer" className="btn-primary">
+            View All on Google Scholar 
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
 };
 
 export default Publications;
