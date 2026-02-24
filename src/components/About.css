@@ -109,6 +109,9 @@
 .bio-links {
     border-top: 1px solid rgba(255, 255, 255, 0.06);
     padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
 }
 
 .bio-link {
@@ -119,11 +122,27 @@
     text-decoration: none;
     color: var(--text-secondary);
     font-size: 0.85rem;
-    transition: color 0.2s;
+    transition: all 0.25s ease;
 }
 
 .bio-link:hover {
     color: var(--accent-cyan);
+}
+
+.bio-link-resume {
+    color: var(--accent-cyan);
+    font-weight: 600;
+    background: rgba(0, 229, 255, 0.06);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    border-radius: 100px;
+    padding: 7px 18px;
+}
+
+.bio-link-resume:hover {
+    background: rgba(0, 229, 255, 0.12);
+    border-color: rgba(0, 229, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.15);
 }
 
 /* ---- Timeline ---- */

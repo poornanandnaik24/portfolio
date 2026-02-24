@@ -224,8 +224,8 @@ const Hero = () => {
                                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </button>
-                        <a href="#contact" className="btn-outline" onClick={e => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
-                            Let's Collaborate
+                        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-outline" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
+                            Download Resume
                         </a>
                     </motion.div>
 

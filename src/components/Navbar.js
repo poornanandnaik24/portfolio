@@ -85,10 +85,11 @@ const Navbar = () => {
 
                 {/* Resume Button */}
                 <a
-                    href="/resume.pdf"
+                    href={process.env.PUBLIC_URL + '/Resume.pdf'}
                     className="btn-primary nav-resume"
                     target="_blank"
                     rel="noreferrer"
+                    download="Poornanand_Resume.pdf"
                 >
                     Resume ↗
                 </a>
@@ -126,7 +127,7 @@ const Navbar = () => {
                                 {link.label}
                             </motion.a>
                         ))}
-                        <a href="/resume.pdf" className="btn-primary mobile-resume" target="_blank" rel="noreferrer">
+                        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-primary mobile-resume" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
                             Resume ↗
                         </a>
                     </motion.div>
