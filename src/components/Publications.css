@@ -1,0 +1,203 @@
+.publications-section {
+    background: linear-gradient(180deg, transparent, rgba(5, 2, 20, 0.4) 50%, transparent);
+}
+
+/* ---- Stats ---- */
+.pub-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.pub-stat-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.pub-stat-icon {
+    font-size: 1.4rem;
+}
+
+.pub-stat-value {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.pub-stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* ---- Publications List ---- */
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* ---- Publication Card ---- */
+.pub-card {
+    position: relative;
+    padding: 1.75rem 1.75rem 1.75rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    overflow: hidden;
+}
+
+.pub-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: 0 2px 2px 0;
+}
+
+.pub-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.pub-type {
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pub-year {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.pub-impact {
+    font-size: 0.75rem;
+    color: #10b981;
+    font-weight: 600;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+
+.pub-citations {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.cite-icon {
+    font-size: 0.9rem;
+}
+
+.pub-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.pub-journal {
+    font-size: 0.83rem;
+    color: var(--accent-cyan);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.pub-authors {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.pub-abstract {
+    font-size: 0.845rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.pub-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.pub-tag {
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.pub-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pub-btn:hover {
+    border-color: var(--pub-color, var(--accent-cyan));
+    color: var(--pub-color, var(--accent-cyan));
+    background: rgba(0, 229, 255, 0.05);
+}
+
+/* ---- Scholar CTA ---- */
+.scholar-cta {
+    text-align: center;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .pub-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 460px) {
+    .pub-card {
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+    }
+}

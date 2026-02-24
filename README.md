@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# 🧠 Poornanand's Portfolio – Medical Imaging & Deep Learning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A stunning, fully responsive personal portfolio website built with React.js, Framer Motion, and modern CSS — tailored for a Medical Imaging & Deep Learning researcher.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Animated Hero Section** – Custom typewriter effect, animated SVG brain visualization with neural network, particle effects, and floating tech badges
+- **About Section** – Bio card with animated avatar ring + interactive career timeline
+- **Skills Section** – Tabbed skill categories with animated progress bars (Deep Learning, Medical Imaging, Computer Vision, Tools)
+- **Research Areas** – 6 curated research domains with color-coded metric cards and technique tags
+- **Projects Section** – 6 real medical AI projects with category filters, GitHub/demo links, and performance metrics
+- **Publications Section** – Peer-reviewed papers with citation counts, journal impact factors, DOI & arXiv links
+- **Contact Section** – Functional contact form with social links
+- **Premium UI** – Custom cursor, glassmorphism cards, animated grid background, scroll-triggered animations
+- **Fully Responsive** – Optimized for all screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Layer | Technology |
+|---|---|
+| Framework | React.js 19 |
+| Animations | Framer Motion |
+| Styling | Vanilla CSS (CSS Variables) |
+| Fonts | Space Grotesk, Inter, JetBrains Mono |
+| Observer | react-intersection-observer |
+| Deployment | GitHub Pages (`gh-pages`) |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js 18+
+- npm 9+
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Run Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone the repo
+git clone https://github.com/poornanand/portfolio.git
+cd portfolio
 
-### `npm run eject`
+# Install dependencies
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Start development server
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Deploy to GitHub Pages
 
-## Learn More
+1. **Update `homepage`** in `package.json` with your actual GitHub username:
+   ```json
+   "homepage": "https://<your-github-username>.github.io/portfolio"
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Push your code to GitHub**, then run:
+   ```bash
+   npm run deploy
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. In your GitHub repo: **Settings → Pages → Source → gh-pages branch**
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+src/
+├── components/
+│   ├── CustomCursor.js     # Animated dual-ring cursor
+│   ├── Navbar.js / .css    # Sticky glassmorphism navbar
+│   ├── Hero.js / .css      # Landing + animated brain SVG
+│   ├── About.js / .css     # Bio card + career timeline
+│   ├── Skills.js / .css    # Tabbed animated skill bars
+│   ├── Research.js / .css  # Research area cards
+│   ├── Projects.js / .css  # Filterable project grid
+│   ├── Publications.js/.css# Academic publications list
+│   ├── Contact.js / .css   # Contact form + social cards
+│   └── Footer.js / .css    # Site footer
+├── App.js / App.css        # Root + animated loader
+└── index.css               # Global design tokens
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🎨 Customization Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Your Info**: Update all placeholder text (name, email, org names, GitHub/LinkedIn URLs) across component files
+- **Colors**: Modify `--accent-cyan`, `--accent-purple`, etc. in `src/index.css`
+- **Content Data**: Edit the data arrays at the top of `Skills.js`, `Projects.js`, `Publications.js`, `Research.js`
+- **Resume**: Replace `/public/resume.pdf` with your actual resume PDF
+- **Contact Form**: Integrate [EmailJS](https://emailjs.com/) or [Formspree](https://formspree.io/) in `Contact.js`
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📬 Contact
 
-### Deployment
+**Poornanand** — Medical Imaging & Deep Learning Researcher  
+📧 poornanand@example.com | [LinkedIn](https://linkedin.com/) | [Google Scholar](https://scholar.google.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">Built with ♥ using React & Framer Motion</p>

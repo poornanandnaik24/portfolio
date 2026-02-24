@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+/* =====================================================
+   APP LOADER
+   ===================================================== */
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: loaderFadeOut 0.5s ease 1.8s forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes loaderFadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+}
+
+.loader-rings {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.loader-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  animation: spinRing 1.5s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.ring-1 {
+  width: 120px;
+  height: 120px;
+  border-top-color: #00e5ff;
+  border-right-color: rgba(0, 229, 255, 0.2);
+  animation-duration: 1.2s;
+}
+
+.ring-2 {
+  width: 88px;
+  height: 88px;
+  border-top-color: #a855f7;
+  border-left-color: rgba(168, 85, 247, 0.2);
+  animation-duration: 1.6s;
+  animation-direction: reverse;
+}
+
+.ring-3 {
+  width: 56px;
+  height: 56px;
+  border-top-color: #ec4899;
+  border-bottom-color: rgba(236, 72, 153, 0.2);
+  animation-duration: 1s;
+}
+
+@keyframes spinRing {
   to {
     transform: rotate(360deg);
+  }
+}
+
+.loader-icon {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loader-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+
+.loader-text {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.loader-dots {
+  animation: dotsAnim 1.5s step-start infinite;
+}
+
+@keyframes dotsAnim {
+  0% {
+    content: '.';
+  }
+
+  33% {
+    content: '..';
+  }
+
+  66% {
+    content: '...';
+  }
+}
+
+/* =====================================================
+   APP WRAPPER
+   ===================================================== */
+.app {
+  position: relative;
+  z-index: 2;
+  animation: appFadeIn 0.6s ease 0.2s both;
+}
+
+@keyframes appFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
