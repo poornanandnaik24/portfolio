@@ -9,6 +9,7 @@ import Publications from './components/Publications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import ResumeModal from './components/ResumeModal';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <CustomCursor />
+      <ResumeModal />
       <div className="noise-overlay" />
       <div className="grid-bg" />
 

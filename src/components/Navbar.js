@@ -84,14 +84,12 @@ const Navbar = () => {
                 </ul>
 
                 {/* Resume Button */}
-                <a
-                    href={process.env.PUBLIC_URL + '/Resume.pdf'}
+                <button
                     className="btn-primary nav-resume"
-                    target="_blank"
-                    rel="noreferrer"
+                    onClick={() => window.dispatchEvent(new CustomEvent('openResume'))}
                 >
                     Resume ↗
-                </a>
+                </button>
 
                 {/* Hamburger */}
                 <button
@@ -126,9 +124,12 @@ const Navbar = () => {
                                 {link.label}
                             </motion.a>
                         ))}
-                        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-primary mobile-resume" target="_blank" rel="noreferrer">
+                        <button
+                            className="btn-primary mobile-resume"
+                            onClick={() => { setMenuOpen(false); window.dispatchEvent(new CustomEvent('openResume')); }}
+                        >
                             Resume ↗
-                        </a>
+                        </button>
                     </motion.div>
                 )}
             </AnimatePresence>

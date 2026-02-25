@@ -107,9 +107,9 @@ const About = () => {
                 <a href="mailto:poornanandnaik24@gmail.com" className="bio-link">
                   <span></span> poornanandnaik24@gmail.com
                 </a>
-                <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="bio-link bio-link-resume" target="_blank" rel="noreferrer">
-                  <span></span> Download Resume
-                </a>
+                <button className="bio-link bio-link-resume" onClick={() => window.dispatchEvent(new CustomEvent('openResume'))}>
+                  <span></span> View Resume
+                </button>
               </div>
             </div>
           </motion.div>

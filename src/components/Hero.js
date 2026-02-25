@@ -163,14 +163,14 @@ const Hero = () => {
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-            <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-outline" target="_blank" rel="noreferrer">
+            <button className="btn-outline" onClick={() => window.dispatchEvent(new CustomEvent('openResume'))}>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download Resume
-            </a>
+              View Resume
+            </button>
           </motion.div>
 
           <motion.div className="hero-socials" variants={itemVariants}>
