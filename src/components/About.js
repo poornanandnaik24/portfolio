@@ -71,13 +71,13 @@ const About = () => {
                   <svg viewBox="0 0 120 120" fill="none">
                     <defs>
                       <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#00e5ff"/>
-                        <stop offset="100%" stopColor="#a855f7"/>
+                        <stop offset="0%" stopColor="#00e5ff" />
+                        <stop offset="100%" stopColor="#a855f7" />
                       </linearGradient>
                     </defs>
-                    <circle cx="60" cy="45" r="22" fill="url(#avatarGrad)" opacity="0.9"/>
-                    <path d="M20 110 Q20 80 60 80 Q100 80 100 110" fill="url(#avatarGrad)" opacity="0.7"/>
-                    <circle cx="60" cy="45" r="22" stroke="rgba(0,229,255,0.4)" strokeWidth="2" fill="none"/>
+                    <circle cx="60" cy="45" r="22" fill="url(#avatarGrad)" opacity="0.9" />
+                    <path d="M20 110 Q20 80 60 80 Q100 80 100 110" fill="url(#avatarGrad)" opacity="0.7" />
+                    <circle cx="60" cy="45" r="22" stroke="rgba(0,229,255,0.4)" strokeWidth="2" fill="none" />
                   </svg>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const About = () => {
                 <a href="mailto:poornanandnaik24@gmail.com" className="bio-link">
                   <span></span> poornanandnaik24@gmail.com
                 </a>
-                <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="bio-link bio-link-resume" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
+                <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="bio-link bio-link-resume" target="_blank" rel="noreferrer">
                   <span></span> Download Resume
                 </a>
               </div>

@@ -160,8 +160,8 @@ const Publications = () => {
         </div>
 
         <motion.div className="pub-cta" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.8 }}>
-          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer" className="btn-primary">
-            View All on Google Scholar 
+          <a href="https://scholar.google.com/citations?user=c16Cx-kAAAAJ&hl=en" target="_blank" rel="noreferrer" className="btn-primary">
+            View All on Google Scholar
           </a>
         </motion.div>
       </div>

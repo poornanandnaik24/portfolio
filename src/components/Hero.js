@@ -44,25 +44,25 @@ const BrainSVG = () => (
     <path d="M345 230 C328 218 305 224 298 240 C291 256 302 268 318 265" stroke="url(#brainGrad2)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.7" />
     <path d="M352 290 C333 276 310 282 304 300 C298 318 312 330 328 326" stroke="url(#brainGrad2)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.6" />
     <path d="M325 340 C308 328 288 335 282 352" stroke="url(#brainGrad2)" strokeWidth="1.5" strokeLinecap="round" fill="none" opacity="0.5" />
-    {[[200,165],[172,238],[162,312],[185,358],[300,165],[328,238],[338,312],[315,358],[250,150],[250,245],[250,340]].map(([cx,cy],i) => (
+    {[[200, 165], [172, 238], [162, 312], [185, 358], [300, 165], [328, 238], [338, 312], [315, 358], [250, 150], [250, 245], [250, 340]].map(([cx, cy], i) => (
       <g key={i}>
         <circle cx={cx} cy={cy} r="5" fill="url(#brainGrad1)" opacity="0.9">
-          <animate attributeName="opacity" values="0.9;0.4;0.9" dur={`${2+i*0.3}s`} repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.9;0.4;0.9" dur={`${2 + i * 0.3}s`} repeatCount="indefinite" />
         </circle>
         <circle cx={cx} cy={cy} r="10" fill="none" stroke="rgba(0,229,255,0.3)" strokeWidth="1">
-          <animate attributeName="r" values="10;18;10" dur={`${2+i*0.3}s`} repeatCount="indefinite" />
-          <animate attributeName="opacity" values="0.3;0;0.3" dur={`${2+i*0.3}s`} repeatCount="indefinite" />
+          <animate attributeName="r" values="10;18;10" dur={`${2 + i * 0.3}s`} repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.3;0;0.3" dur={`${2 + i * 0.3}s`} repeatCount="indefinite" />
         </circle>
       </g>
     ))}
-    {["M200 165 L250 150","M300 165 L250 150","M200 165 L172 238","M300 165 L328 238","M172 238 L250 245","M328 238 L250 245","M172 238 L162 312","M328 238 L338 312","M162 312 L250 340","M338 312 L250 340","M162 312 L185 358","M338 312 L315 358","M250 245 L250 340"].map((d,i) => (
+    {["M200 165 L250 150", "M300 165 L250 150", "M200 165 L172 238", "M300 165 L328 238", "M172 238 L250 245", "M328 238 L250 245", "M172 238 L162 312", "M328 238 L338 312", "M162 312 L250 340", "M338 312 L250 340", "M162 312 L185 358", "M338 312 L315 358", "M250 245 L250 340"].map((d, i) => (
       <path key={i} d={d} stroke="url(#brainGrad1)" strokeWidth="1" opacity="0.3" strokeDasharray="4 4">
-        <animate attributeName="stroke-dashoffset" values="0;-16" dur={`${1.5+i*0.2}s`} repeatCount="indefinite" />
+        <animate attributeName="stroke-dashoffset" values="0;-16" dur={`${1.5 + i * 0.2}s`} repeatCount="indefinite" />
       </path>
     ))}
-    {["M200 165 L172 238","M300 165 L328 238","M172 238 L162 312"].map((d,i) => (
+    {["M200 165 L172 238", "M300 165 L328 238", "M172 238 L162 312"].map((d, i) => (
       <circle key={`p${i}`} r="3" fill="#00e5ff">
-        <animateMotion dur={`${2+i*0.5}s`} repeatCount="indefinite" path={d} />
+        <animateMotion dur={`${2 + i * 0.5}s`} repeatCount="indefinite" path={d} />
       </circle>
     ))}
     <ellipse cx="250" cy="250" rx="60" ry="80" stroke="rgba(0,229,255,0.12)" strokeWidth="1" strokeDasharray="3 5" />
@@ -163,11 +163,11 @@ const Hero = () => {
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-            <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-outline" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
+            <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-outline" target="_blank" rel="noreferrer">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
               Download Resume
             </a>
@@ -177,7 +177,7 @@ const Hero = () => {
             {[
               { href: 'https://github.com/poornanandnaik24', icon: 'GH', label: 'GitHub' },
               { href: 'https://www.linkedin.com/in/poornanandnaik24', icon: 'LI', label: 'LinkedIn' },
-              { href: 'https://scholar.google.com/', icon: 'GS', label: 'Scholar' },
+              { href: 'https://scholar.google.com/citations?user=c16Cx-kAAAAJ&hl=en', icon: 'GS', label: 'Scholar' },
               { href: 'mailto:poornanandnaik24@gmail.com', icon: 'ML', label: 'Email' },
             ].map((s) => (
               <a key={s.label} href={s.href} className="social-pill" target="_blank" rel="noreferrer" title={s.label}>

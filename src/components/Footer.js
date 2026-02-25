@@ -32,7 +32,7 @@ const Footer = () => {
                         {[
                             { label: 'GitHub', href: 'https://github.com/poornanandnaik24' },
                             { label: 'LinkedIn', href: 'https://www.linkedin.com/in/poornanandnaik24' },
-                            { label: 'Scholar', href: 'https://scholar.google.com/' },
+                            { label: 'Scholar', href: 'https://scholar.google.com/citations?user=c16Cx-kAAAAJ&hl=en' },
                             { label: 'Email', href: 'mailto:poornanandnaik24@gmail.com' },
                         ].map(s => (
                             <a key={s.label} href={s.href} className="footer-social" target="_blank" rel="noreferrer">{s.label}</a>

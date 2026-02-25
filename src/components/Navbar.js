@@ -89,7 +89,6 @@ const Navbar = () => {
                     className="btn-primary nav-resume"
                     target="_blank"
                     rel="noreferrer"
-                    download="Poornanand_Resume.pdf"
                 >
                     Resume ↗
                 </a>
@@ -127,7 +126,7 @@ const Navbar = () => {
                                 {link.label}
                             </motion.a>
                         ))}
-                        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-primary mobile-resume" target="_blank" rel="noreferrer" download="Poornanand_Resume.pdf">
+                        <a href={process.env.PUBLIC_URL + '/Resume.pdf'} className="btn-primary mobile-resume" target="_blank" rel="noreferrer">
                             Resume ↗
                         </a>
                     </motion.div>
